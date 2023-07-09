@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Authors>Ben Hendel-Doying</Authors>
+        <Company>Ben Hendel-Doying</Company>
+        <Description>Extension methods for DateTimeOffset and DateTime to compute the moon's "age" and phase.</Description>
+        <Copyright>2023 Ben Hendel-Doying</Copyright>
+        <Version>1.0.0</Version>
+
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageTags>moon phase calendar astronomy math</PackageTags>
+        <PackageProjectUrl>https://github.com/BenMakesGames/MoonMath</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/BenMakesGames/MoonMath</RepositoryUrl>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>package-icon.png</PackageIcon>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="..\LICENSE.md">
+            <Pack>True</Pack>
+            <PackagePath />
+        </None>
+        <None Include="..\README.md">
+            <Pack>True</Pack>
+            <PackagePath />
+        </None>
+        <None Include="..\package-icon.png">
+            <Pack>True</Pack>
+            <PackagePath />
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <AssemblyAttribute Include="CLSCompliantAttribute">
+            <_Parameter1>true</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>
