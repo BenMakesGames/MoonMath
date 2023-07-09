@@ -27,7 +27,7 @@ Computes The Moon's "age" - the number of Earth days since the last new moon. Ra
 #### Example Use
 
 ```c#
-var now = new DateTimeOffset();
+var now = DateTimeOffset.Now;
 
 Console.WriteLine($"It has been {now.GetMoonAge()} days since the last new moon.");
 ```
@@ -48,7 +48,7 @@ Returns a `MoonPhase` indicating the current phase of the Moon. `MoonPhase` has 
 #### Example Use
 
 ```c#
-var now = new DateTimeOffset();
+var now = DateTimeOffset.Now;
 
 var moonPhase = now.GetMoonPhase();
 ```
@@ -77,7 +77,7 @@ Returns the emoji for the given `MoonPhase`:
 #### Example use:
 
 ```c#
-var now = new DateTimeOffset();
+var now = DateTimeOffset.Now;
 
 Console.WriteLine(now.GetMoonPhase().ToEmoji());
 ```
